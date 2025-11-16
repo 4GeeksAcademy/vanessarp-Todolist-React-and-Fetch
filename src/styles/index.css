@@ -1,11 +1,90 @@
-/* 
+body {
+  background: black;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1 {
+  color: rgba(235, 170, 133, 0.774);
+  align-items: flex-center;
+ 
+  font-family: 'Roboto', sans-serif;
+   font-size: 5.5rem;
+}
 
-*/
+.paper {
+  background-color: #fff;
+  padding: 5px;
+  position: relative;
+
+}
+
+.paper,
+.paper::before,
+.paper::after {
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.paper::before,
+.paper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.paper::before {
+  left: 7px;
+  top: 5px;
+  z-index: -1;
+}
+
+.paper::after {
+  left: 12px;
+  top: 10px;
+  z-index: -2;
+}
+
+.bgimagen {
+
+  background-image: url(./src/img/fondotodos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul li {
+  
+  border-top: 1px solid #c7c3c3a1;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  text-rendering: optimizeLegibility;
+  font-size: 2.5rem;
+  display: flex;               
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: none;
+  padding: 1px;
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  text-rendering: optimizeLegibility;
+  font-size: 2.5rem;
+}
+
+button {
+  color: rgba(235, 170, 133, 0.986);
+  border: none;
+  align-items: flex-end;
+  background-color: transparent;
+  font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  color: #7e7c7c;
+  font-size: 1rem;
+}
